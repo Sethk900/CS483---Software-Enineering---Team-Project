@@ -20,7 +20,7 @@ The hero shipwrecks on an island. The first level could be a beach, then the sec
 In addition to the GitHub repo, I'll throw up a SharePoint doc that we can all edit for communication purposes. We can also add presentations and other docs to this fileshare as the project evolves. 
 
 # Initial tasking:
-Seth - Get GitHub repo and SharePoint set up so that we can all track the details and docs related to the project. 
+Seth - Get GitHub repo and SharePoint set up so that we can all track the details and docs related to the project.   
 Greyson - Get a version controlled project set up on Unity so that we can all track and merge changes to the project.  
-Taylor - Delegate tasks for creating an initial mock-up of the game. 
+Taylor - Delegate tasks for creating an initial mock-up of the game.   
 All - Complete development tasks as designated by Taylor and communicate with other team members as necessary. 

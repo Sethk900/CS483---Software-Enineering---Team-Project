@@ -1,2 +1,1 @@
-Git doesn't show empty directories, so this file is a placeholder until the directory owner adds something and removes this file."
-
+wew lad

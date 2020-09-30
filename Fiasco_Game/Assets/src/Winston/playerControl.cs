@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +7,7 @@ public class playerControl : MonoBehaviour
 	
 	public float moveSpeed = 5f;
 	public float crosshairDistance = 2f;
-	public float health = 10f;
+//	public float health = 10f;
 	public float bulletSpeed = 20.0f;
 
 	public Rigidbody2D rb;
@@ -58,14 +58,15 @@ public class playerControl : MonoBehaviour
 	// Handle collisions
 	void OnCollisionEnter2D(Collision2D col) {
 		if (col.gameObject.tag.Equals("EnemyBullet")) {
-			DamagePlayer(2.5f);
+			DamagePlayer(1);
 		}
 	}
 	
 		// Handle Enemy taking damage
-	void DamagePlayer(float damage) {
-		health -= damage;
-		if (health <= 0) {
+	void DamagePlayer(int damage) {
+		//health -= damage;
+		UIScript.health -= damage;
+		if (UIScript.health <= 0) {
 			PlayerDeath();
 		}
 	}

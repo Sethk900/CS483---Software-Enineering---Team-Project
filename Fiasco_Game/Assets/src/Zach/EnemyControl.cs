@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -63,6 +63,7 @@ public class EnemyControl : MonoBehaviour
 		health -= damage;
 		if (health <= 0) {
 			EnemyDeath();
+			UIScript.score+=1; //Increment the score
 		}
 	}
 	

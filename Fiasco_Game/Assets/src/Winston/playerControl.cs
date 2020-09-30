@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerControl : MonoBehaviour
 {
@@ -58,7 +59,7 @@ public class playerControl : MonoBehaviour
 	// Handle collisions
 	void OnCollisionEnter2D(Collision2D col) {
 		if (col.gameObject.tag.Equals("EnemyBullet")) {
-			DamagePlayer(1);
+			DamagePlayer(10);
 		}
 	}
 	
@@ -74,5 +75,6 @@ public class playerControl : MonoBehaviour
 	// Function called on player death
 	void PlayerDeath() {
 		Destroy(gameObject);
+		SceneManager.LoadScene("DeathScreen");
 	}
 }

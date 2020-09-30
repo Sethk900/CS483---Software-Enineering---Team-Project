@@ -21,4 +21,8 @@ public class StartButton : MonoBehaviour
 	public void PressStartButton(){
         SceneManager.LoadScene("Level 1");
 	}
+	
+	public void PressQuitButton(){
+		Application.Quit();
+	}
 }

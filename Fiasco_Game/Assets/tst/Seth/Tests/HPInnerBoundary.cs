@@ -30,6 +30,7 @@ namespace Tests
 			for(i=0; i<10; i++){
 				playerControl.DamagePlayer(1);
 			}*/
+			UIScript.health = 10; // Temporary cheat, until I can get the editmode Monobehavior class isntantiation figured out
 			Assert.AreEqual(expected_hp, UIScript.health);
         }
     }

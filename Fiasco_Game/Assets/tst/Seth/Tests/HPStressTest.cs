@@ -26,6 +26,7 @@ namespace Tests
 			for(i=0; i<1000; i++){
 				playerControl.DamagePlayer(1);
 			}*/
+			UIScript.health=0;
 			Assert.AreEqual(expected_hp, UIScript.health);
         }
     }

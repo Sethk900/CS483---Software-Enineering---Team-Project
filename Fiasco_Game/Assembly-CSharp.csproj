@@ -58,17 +58,12 @@
      <Compile Include="Assets\src\Max\bullet.cs" />
      <Compile Include="Assets\src\Zach\enemyControl.cs" />
      <Compile Include="Assets\src\Greyson\SetVolume.cs" />
-     <Compile Include="Assets\src\Seth\Scripts\UIScript.cs" />
-     <Compile Include="Assets\src\Seth\Scripts\OptionsButton.cs" />
      <Compile Include="Assets\src\Winston\playerControl.cs" />
      <Compile Include="Assets\src\Zach\Chaser\wormControl.cs" />
-     <Compile Include="Assets\src\Seth\Scripts\HelpButton.cs" />
      <Compile Include="Assets\src\Max\bulletControl.cs" />
-     <Compile Include="Assets\src\Seth\Scripts\BackButton.cs" />
      <Compile Include="Assets\src\Taylor\CameraMovement.cs" />
      <Compile Include="Assets\src\Taylor\LevelLoader.cs" />
      <Compile Include="Assets\src\Greyson\EnemyMovement.cs" />
-     <Compile Include="Assets\src\Seth\Scripts\StartButton.cs" />
      <None Include="Assets\tst\Taylor\init.txt" />
      <None Include="Assets\prefabs\Winston\init.txt" />
      <None Include="Assets\src\Winston\init.txt" />
@@ -695,6 +690,12 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SethTestAssembly.csproj">
+      <Project>{70BF51F3-FCF0-C7F4-D895-DAC14E3E37F7}</Project>
+      <Name>SethTestAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

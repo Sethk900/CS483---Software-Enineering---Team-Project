@@ -55,8 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\tst\Seth\Tests\HPStressTest.cs" />
      <Compile Include="Assets\tst\Seth\Tests\HPInnerBoundary.cs" />
+     <Compile Include="Assets\tst\Seth\Tests\HPStressTest.cs" />
      <Compile Include="Assets\tst\Seth\Tests\HPOuterBoundaryTest.cs" />
      <None Include="Assets\tst\Seth\Tests\Tests.asmdef" />
  <Reference Include="UnityEngine.TestRunner">
@@ -608,6 +608,12 @@
  <Reference Include="System.Xml.XPath.XDocument">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="TestAssembly.csproj">
+      <Project>{45BBFD84-8EBC-757E-37F4-D0EAFB205106}</Project>
+      <Name>TestAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

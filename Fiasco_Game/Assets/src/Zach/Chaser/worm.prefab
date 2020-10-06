@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2556269200256693758}
   m_Layer: 0
   m_Name: worm
-  m_TagString: Untagged
+  m_TagString: worm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -61,6 +61,9 @@ public class playerControl : MonoBehaviour
 		if (col.gameObject.tag.Equals("EnemyBullet")) {
 			DamagePlayer(10);
 		}
+		else if(col.gameObject.tag.Equals("worm")){
+			DamagePlayer(10);
+		}
 	}
 	
 		// Handle Enemy taking damage

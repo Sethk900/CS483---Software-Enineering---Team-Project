@@ -13,25 +13,25 @@ namespace Tests
         [Test]
         public void HUDStressTestSimplePasses()
         {
-			playerControl test = new playerControl();
-			var UIScript = new UIScript();
-		
-            // Use the Assert class to test conditions
-			// In this stress test we simulate a large number of collision between enemy bullets and the player
-			// At the end of the test, the health variable should be 0 
+			HealthLogic test = new HealthLogic();
 			
-			//int i;
+			// At the end of the test, the health variable should be 10
+			int i;
 			int expected_hp = 10;
 			
-			// Try out the DamagePlayer function to bring the HP down to 10
-			/*for(i=0; i<8; i++){
-				playerControl.DamagePlayer(10);
+			for(i=0; i<5; i++){ //50 damage
+				test.DamagePlayer(10);
 			}
-			for(i=0; i<10; i++){
-				playerControl.DamagePlayer(1);
-			}*/
-			UIScript.health = 10; // Temporary cheat, until I can get the editmode Monobehavior class isntantiation figured out
-			Assert.AreEqual(expected_hp, UIScript.health);
+			for(i=0; i<5; i++){ //25 damage
+				test.DamagePlayer(5);
+			}
+			for(i=0; i<15; i++){ // 15 damage
+				test.DamagePlayer(1);
+			}
+			
+			Assert.AreEqual(expected_hp, test.health);
         }
+		
+	
     }
 }

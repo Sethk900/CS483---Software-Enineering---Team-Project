@@ -11,23 +11,23 @@ namespace Tests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void HUDStressTestSimplePasses()
+        public void HPOuterBoundaryTestSimplePasses()
         {
-			var playerControl = new playerControl();
-			var UIScript = new UIScript();
-		
-            // Use the Assert class to test conditions
-			// In this stress test we simulate a large number of collision between enemy bullets and the player
-			// At the end of the test, the health variable should be 0 
+			HealthLogic test = new HealthLogic();
 			
-			//int i;
+			int i;
 			int expected_hp = 0;
-			/*
+			
+			// This loop damages the player so much that the health value goes out of bounds
 			for(i=0; i<1000; i++){
-				playerControl.DamagePlayer(1);
-			}*/
-			UIScript.health = 0; //Temporary cheat, until I can get the Monobehavior test instantiations worked out
-			Assert.AreEqual(expected_hp, UIScript.health);
+				test.DamagePlayer(1);
+			}
+			
+			//Assert
+			// Even though the loop pushed it out of bounds, the class should catch the invalid value and correct it
+			Assert.AreEqual(expected_hp, test.health);
         }
+		
+	
     }
 }

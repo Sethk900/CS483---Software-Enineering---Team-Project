@@ -235,11 +235,8 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UWP.Extensions">
-        <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:/Users/greys/Desktop/CS383_Team_Project/Fiasco_Game/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>D:/Classes/CS 383/Project/Game/CS383_Team_Project/Fiasco_Game/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -587,16 +584,16 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>C:/Users/greys/Desktop/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>D:/Classes/CS 383/Project/Game/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>C:/Users/greys/Desktop/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>D:/Classes/CS 383/Project/Game/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/greys/Desktop/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/Classes/CS 383/Project/Game/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/greys/Desktop/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/Classes/CS 383/Project/Game/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -12,14 +12,38 @@ public static class SoundManager {
 
     private static Dictionary<Sound, float> soundTimerDictionary;
 
-    public static void Initialize() {
+    public static void Initialize() { //call in script that triggers tempPlayerWalk
+        soundTimerDictionary = new Dictionary<Sound, float>();
+        soundTimerDictionary[Sound.tempPlayerWalk] = 0f;
+    }
 
+    private static bool CanPlaySound(Sound sound) {
+        switch (sound) {
+            default:
+                return true;
+            case Sound.tempPlayerWalk: //don't want walk sounds to be triggered every frame
+                if  (soundTimerDictionary.ContainsKey(sound)) {
+                    float lastTimePlayed = soundTimerDictionary[sound];
+                    float playerMoveTimerMax = .05f;
+                    if (lastTimePlayed + playerMoveTimerMax < Time.time) {
+                        soundTimerDictionary[sound] = Time.time;
+                        return true;
+                    } else {
+                        return false;
+                    }
+                } else {
+                    return true;
+                }
+                //break
+        }
     }
 
     public static void PlaySound(Sound sound) {
-        GameObject soundGameObject = new GameObject("Sound");
-        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
-        audioSource.PlayOneShot(GetAudioClip(sound));
+        if (CanPlaySound(sound)) {
+            GameObject soundGameObject = new GameObject("Sound");
+            AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+            audioSource.PlayOneShot(GetAudioClip(sound));
+        }
     }
 
     private static AudioClip GetAudioClip(Sound sound) {

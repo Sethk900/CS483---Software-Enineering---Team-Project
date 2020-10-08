@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7946149646263648006}
   - component: {fileID: 4059855051584631911}
   - component: {fileID: 6504970846065234322}
-  - component: {fileID: 6532493020187770149}
+  - component: {fileID: -6451317358276601083}
   - component: {fileID: 2037320720779532699}
   m_Layer: 0
   m_Name: mole
@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 278376461894690991}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 55d22840de481bf6f8bfadc0fb1c14d2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 07453240bce041d3bab7d88a379ae5c4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4727ad313104b479415ef6d2ba96ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 2
   thePlayer: {fileID: 0}
---- !u!114 &6532493020187770149
+--- !u!114 &-6451317358276601083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,12 +128,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 278376461894690991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1794972962877d848bf8abb11fc3592e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a897bfa6e0cbc6b485d59b828bef48e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  bulletSpeed: 10
+  bulletFrequency: 300
+  bulletTimer: 0
   rb: {fileID: 2037320720779532699}
   thePlayer: {fileID: 0}
+  bulletPrefab: {fileID: 2523264847705416588, guid: a704d711841554c438b85dcb40bf8a67, type: 3}
 --- !u!50 &2037320720779532699
 Rigidbody2D:
   serializedVersion: 4

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
 	public float moveSpeed = 2f;
+	public Animator animator;
 
 	private Rigidbody2D rb;	
 	public playerControl thePlayer;
@@ -22,6 +23,30 @@ public class EnemyMovement : MonoBehaviour
 	 */
 	void FixedUpdate() {
 		//Move enemy
+		if(transform.position.y > thePlayer.rb.position.y){
+		   animator.SetBool("up", true);
+		   animator.SetBool("down", false);
+		   animator.SetBool("right", false);
+		   animator.SetBool("left", false);
+		} else if(transform.position.y < thePlayer.rb.position.y){
+		   animator.SetBool("up", false);
+		   animator.SetBool("down", true);
+		   animator.SetBool("right", false);
+		   animator.SetBool("left", false);
+		}
+		if(transform.position.y == thePlayer.rb.position.y && transform.position.x < thePlayer.rb.position.x){
+			animator.SetBool("up", false);
+		   animator.SetBool("down", false);
+		   animator.SetBool("right", true);
+		   animator.SetBool("left", false);
+		} else if(transform.position.y == thePlayer.rb.position.y && transform.position.x > thePlayer.rb.position.x){
+			animator.SetBool("up", false);
+		   animator.SetBool("down", false);
+		   animator.SetBool("right", false);
+		   animator.SetBool("left", true);
+		}
 		transform.position = Vector2.MoveTowards(transform.position, thePlayer.rb.position, moveSpeed * Time.deltaTime);
+		
+
 	}
 }

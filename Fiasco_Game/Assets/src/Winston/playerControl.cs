@@ -8,7 +8,7 @@ public class playerControl : MonoBehaviour
 	
 	public float moveSpeed = 5f;
 	public float crosshairDistance = 2f;
-//	public float health = 10f;
+	public int health = 100;
 	public float bulletSpeed = 20.0f;
 
 	public Rigidbody2D rb;
@@ -35,6 +35,7 @@ public class playerControl : MonoBehaviour
 		
 		if (Input.GetButtonDown("Fire1")) {
 			bcInst.Shoot(rb.position,crosshair.transform.localPosition, bulletSpeed, bulletPrefab);
+			//SoundManager.PlaySound(SoundManager.Sound.PlayerShoot); // instantiates null, broken - Greyson
 		}
     }
 	
@@ -61,15 +62,18 @@ public class playerControl : MonoBehaviour
 		if (col.gameObject.tag.Equals("EnemyBullet")) {
 			DamagePlayer(10);
 		}
+		else if(col.gameObject.tag.Equals("worm")){
+			DamagePlayer(10);
+		}
 	}
 	
 		// Handle Enemy taking damage
-	void DamagePlayer(int damage) {
-		//health -= damage;
-		UIScript.health -= damage;
-		if (UIScript.health <= 0) {
-			PlayerDeath();
-		}
+	public void DamagePlayer(int damage) {
+		if(health>0) health -= damage;
+	//	UIScript.health -= damage;
+	//	if (UIScript.health <= 0) {
+	//		PlayerDeath();
+	//	}
 	}
 	
 	// Function called on player death
@@ -78,3 +82,15 @@ public class playerControl : MonoBehaviour
 		SceneManager.LoadScene("DeathScreen");
 	}
 }
+
+	public class HealthLogic : playerControl{
+	//public int health = 100;
+	
+	 /*public void DamagePlayer(int damage) {
+		health -= damage;
+		UIScript.health -= damage;
+		if (UIScript.health <= 0) {
+			
+		}
+	}*/
+	}

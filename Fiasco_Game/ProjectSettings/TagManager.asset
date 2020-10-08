@@ -9,6 +9,7 @@ TagManager:
   - Pit
   - EnemyBullet
   - PlayerBullet
+  - worm
   layers:
   - Default
   - TransparentFX

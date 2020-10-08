@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2556269200256693758}
   m_Layer: 0
   m_Name: worm
-  m_TagString: Untagged
+  m_TagString: worm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,7 +117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4727ad313104b479415ef6d2ba96ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 3
+  animator: {fileID: 533735402487404546}
   thePlayer: {fileID: 0}
 --- !u!114 &7320503230617325888
 MonoBehaviour:
@@ -131,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1794972962877d848bf8abb11fc3592e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 533735402487404546}
   health: 10
   rb: {fileID: 2556269200256693758}
   thePlayer: {fileID: 0}

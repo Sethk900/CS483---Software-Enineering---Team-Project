@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class SoundManager {
+public static class SoundManager { //call with SoundManager.PlaySound(SoundManager.Sound.soundname)
 
     public enum Sound { //all the sounds that can be played, with files defined in the Editor
         tempPlayerShoot,

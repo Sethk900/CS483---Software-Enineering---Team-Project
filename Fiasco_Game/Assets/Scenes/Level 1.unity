@@ -897,9 +897,9 @@ MonoBehaviour:
   - sound: 0
     audioClip: {fileID: 8300000, guid: 544d99140c108a244a0242db15fdf3d9, type: 3}
   - sound: 1
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 544d99140c108a244a0242db15fdf3d9, type: 3}
   - sound: 2
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 544d99140c108a244a0242db15fdf3d9, type: 3}
 --- !u!4 &990034599
 Transform:
   m_ObjectHideFlags: 0

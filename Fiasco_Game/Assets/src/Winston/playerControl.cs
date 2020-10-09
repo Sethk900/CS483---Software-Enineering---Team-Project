@@ -35,7 +35,7 @@ public class playerControl : MonoBehaviour
 		
 		if (Input.GetButtonDown("Fire1")) {
 			bcInst.Shoot(rb.position,crosshair.transform.localPosition, bulletSpeed, bulletPrefab);
-			//SoundManager.PlaySound(SoundManager.Sound.PlayerShoot); // instantiates null, broken - Greyson
+			FindObjectOfType<AudioManager>().Play("PlayerShoot"); // - Greyson
 		}
     }
 	

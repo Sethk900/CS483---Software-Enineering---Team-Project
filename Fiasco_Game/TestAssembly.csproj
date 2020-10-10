@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\src\Greyson\Sound.cs" />
      <Compile Include="Assets\src\Max\bullet.cs" />
      <Compile Include="Assets\src\Greyson\OldSoundManager2.cs" />
      <Compile Include="Assets\src\Max\Shoot.cs" />
@@ -50,6 +51,7 @@
      <Compile Include="Assets\src\Max\BulletUpdated.cs" />
      <Compile Include="Assets\src\Seth\Scripts\HelpButton.cs" />
      <Compile Include="Assets\src\Max\bulletControl.cs" />
+     <Compile Include="Assets\src\Greyson\AudioManager.cs" />
      <Compile Include="Assets\src\Zach\Shooter\mole\moleControl.cs" />
      <Compile Include="Assets\src\Seth\Scripts\BackButton.cs" />
      <Compile Include="Assets\src\Max\BulletPool.cs" />
@@ -57,8 +59,6 @@
      <Compile Include="Assets\src\Taylor\LevelLoader.cs" />
      <Compile Include="Assets\src\Greyson\EnemyMovement.cs" />
      <Compile Include="Assets\src\Seth\Scripts\StartButton.cs" />
-     <Compile Include="Assets\src\Greyson\AudioManager.cs" />
-     <Compile Include="Assets\src\Greyson\Sound.cs" />
      <None Include="Assets\src\TestAssembly.asmdef" />
      <None Include="Assets\src\Winston\init.txt" />
      <None Include="Assets\src\Taylor\init.txt" />

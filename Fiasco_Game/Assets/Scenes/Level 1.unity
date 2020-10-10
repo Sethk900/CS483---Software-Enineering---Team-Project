@@ -14331,6 +14331,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147980614436643718, guid: a4d0a1d7985106643b93a3790311ec1a, type: 3}
+      propertyPath: sounds.Array.data[0].mixerGroup
+      value: 
+      objectReference: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
     - target: {fileID: 5837047982844549136, guid: a4d0a1d7985106643b93a3790311ec1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

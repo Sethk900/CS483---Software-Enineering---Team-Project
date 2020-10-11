@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abbc35caf67e3dc4ba11c6ee23ebd15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixerGroup: {fileID: 0}
+  mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
   sounds:
   - name: PlayerShoot
     clip: {fileID: 8300000, guid: 544d99140c108a244a0242db15fdf3d9, type: 3}
@@ -52,5 +52,5 @@ MonoBehaviour:
     pitch: 0.99
     pitchVariance: 0
     loop: 0
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
     source: {fileID: 0}

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/tst/Zach/Stress Tests/Test Scene.unity
+- path: Assets/Scenes/StartScreen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

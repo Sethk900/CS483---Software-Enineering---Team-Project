@@ -14,11 +14,11 @@ namespace Tests
     public class StressTest
     {      
         private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole.prefab");
- 
+        private GameObject testObject;
         [SetUp]
         public void SetUp(){
          
-         SceneManager.LoadScene("Test Scene");
+         testObject = GameObject.Instantiate(new GameObject());
         
         }
         
@@ -32,13 +32,17 @@ namespace Tests
             
             for(i = 0; i <= 500; i++){
                 
-                Object.Instantiate(prefab, new Vector3(-1.5f, 4, 0), Quaternion.identity);           
+                GameObject.Instantiate(prefab, new Vector3(-1.5f, 4, 0), Quaternion.identity);           
             
             }
 
-            Assert.AreEqual(i, 500);
+            Assert.AreEqual(i, 1000);
             yield return null;
         }
 
+        [TearDown]
+        public void removeAll(){
+            GameObject.Destroy(testObject);
+        }
     }
 }

@@ -36,8 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\mole.cs" />
-     <None Include="Assets\tst\Taylor\init.txt" />
+     <Compile Include="Assets\tst\Seth\StressTests\Seth_StressTest.cs" />
      <None Include="Assets\prefabs\Winston\init.txt" />
      <None Include="Assets\prefabs\Seth\init.txt" />
      <None Include="Assets\tst\Max\init.txt" />
@@ -666,6 +665,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="LevelLoaderTest.csproj">
+      <Project>{8f4ec6a8-8d65-9793-c7c2-807a2cc6bc0c}</Project>
+      <Name>LevelLoaderTest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="TestAssembly.csproj">
       <Project>{85936653-8eae-b6d5-3ab6-e4c4d17cfb24}</Project>
       <Name>TestAssembly</Name>

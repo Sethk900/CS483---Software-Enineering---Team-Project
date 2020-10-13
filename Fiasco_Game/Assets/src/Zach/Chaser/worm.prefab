@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 7312149972277050871}
   - component: {fileID: 7320503230617325888}
   - component: {fileID: 2556269200256693758}
+  - component: {fileID: 4869870361002266664}
+  - component: {fileID: -5230334891718563760}
+  - component: {fileID: -288596068305757529}
   m_Layer: 0
   m_Name: worm
   m_TagString: worm
@@ -151,9 +154,56 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!58 &4869870361002266664
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4387430482818172106}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.08
+--- !u!114 &-5230334891718563760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4387430482818172106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c323ca12a50d5a70081637b0e51f1652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  bulletSpeed: 10
+  bulletFrequency: 300
+  bulletTimer: 0
+  rb: {fileID: 2556269200256693758}
+  thePlayer: {fileID: 0}
+  bulletPrefab: {fileID: 2523264847705416588, guid: a704d711841554c438b85dcb40bf8a67, type: 3}
+--- !u!114 &-288596068305757529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4387430482818172106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832ea19aef6a0e04399256d271259bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

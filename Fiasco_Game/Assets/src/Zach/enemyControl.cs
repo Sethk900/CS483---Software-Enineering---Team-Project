@@ -50,7 +50,7 @@ public class EnemyControl : MonoBehaviour
 
 	// Enemy attack behavior
 	void AttackBehavior () {
-		if (bulletTimer == bulletFrequency) {
+		if (bulletTimer >= bulletFrequency) {
 			bcInst.Shoot(rb.position, playerDirection, bulletSpeed, bulletPrefab);
 			bulletTimer = 0;
 		} else {

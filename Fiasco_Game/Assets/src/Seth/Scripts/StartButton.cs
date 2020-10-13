@@ -19,6 +19,8 @@ public class StartButton : MonoBehaviour
 	
 		
 	public void PressStartButton(){
+        UIScript.score = 0;
+        UIScript.health = 100;
         SceneManager.LoadScene("Level 1");
 	}
 	

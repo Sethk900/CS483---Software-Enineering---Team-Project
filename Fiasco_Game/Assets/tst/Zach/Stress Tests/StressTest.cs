@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
@@ -13,7 +13,7 @@ namespace Tests
 {
     public class StressTest
     {      
-        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole.prefab");
+        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole/mole.prefab");
         private GameObject testObject;
         [SetUp]
         public void SetUp(){
@@ -27,16 +27,17 @@ namespace Tests
         [UnityTest]
         public IEnumerator StressTestPasses()
         {
+			int imax = 10000;
             int i = 0;
             SetUp();
             
-            for(i = 0; i <= 500; i++){
+            for(i = 0; i <imax; i++){
                 
                 GameObject.Instantiate(prefab, new Vector3(-1.5f, 4, 0), Quaternion.identity);           
             
             }
 
-            Assert.AreEqual(i, 1000);
+            Assert.AreEqual(imax, i);
             yield return null;
         }
 

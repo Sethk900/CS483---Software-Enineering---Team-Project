@@ -13,12 +13,13 @@ namespace Tests
 {
     public class StressTest
     {      
-        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole/mole.prefab");
+        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole.prefab");
         private GameObject testObject;
+        public GameObject character;
         [SetUp]
         public void SetUp(){
          
-         testObject = GameObject.Instantiate(new GameObject());
+           testObject = GameObject.Instantiate(new GameObject());
         
         }
         
@@ -27,23 +28,26 @@ namespace Tests
         [UnityTest]
         public IEnumerator StressTestPasses()
         {
-			int imax = 10000;
             int i = 0;
             SetUp();
             
-            for(i = 0; i <imax; i++){
+            for(i = 0; i <= 1000; i++){
                 
-                GameObject.Instantiate(prefab, new Vector3(-1.5f, 4, 0), Quaternion.identity);           
+                character = GameObject.Instantiate(prefab, new Vector3(-1.5f, 4, 0), Quaternion.identity);           
+                character.position = Vector2.MoveTowards(character.position, new Vector2(3, 5), 2 * Time.deltaTime);
             
             }
 
-            Assert.AreEqual(imax, i);
+            Assert.AreEqual(i, 1000);
             yield return null;
         }
 
         [TearDown]
         public void removeAll(){
+            
             GameObject.Destroy(testObject);
+        
         }
+    
     }
 }

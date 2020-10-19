@@ -34,7 +34,7 @@ namespace Tests
             for(i = 0; i <= 1000; i++){
                 
                 character = GameObject.Instantiate(prefab, new Vector3(-1.5f, 4, 0), Quaternion.identity);           
-                character.position = Vector2.MoveTowards(character.position, new Vector2(3, 5), 2 * Time.deltaTime);
+                character.transform.position = Vector2.MoveTowards(character.transform.position, new Vector2(3, 5), 2 * Time.deltaTime);
             
             }
 

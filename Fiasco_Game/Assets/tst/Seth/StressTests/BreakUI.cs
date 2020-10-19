@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BreakUI : MonoBehaviour
 {
+	public int k = 0;
 	public int i = 0;
 	public int sum = 0;
 	public int IncrementValue=1; //Update IncrementValue to govern how much we increment the health and score values by
@@ -19,6 +20,8 @@ public class BreakUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		if ((k%60)==0) {IncrementValue = IncrementValue*2;}
+		k++;
       	i++;
 	  	UIScript.health+=sum;
 		UIScript.score+=sum;

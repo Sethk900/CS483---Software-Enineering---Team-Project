@@ -60,6 +60,7 @@
      <Compile Include="Assets\src\Taylor\LevelLoader.cs" />
      <Compile Include="Assets\src\Greyson\EnemyMovement.cs" />
      <Compile Include="Assets\src\Seth\Scripts\StartButton.cs" />
+     <Compile Include="Assets\src\Zach\moleTest\moleControlTest.cs" />
      <None Include="Assets\src\TestAssembly.asmdef" />
      <None Include="Assets\src\Winston\init.txt" />
      <None Include="Assets\src\Taylor\init.txt" />

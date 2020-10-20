@@ -13,9 +13,10 @@ namespace Tests
 {
     public class StressTest
     {      
-        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole.prefab");
+        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/moleTest/moleTest.prefab");
         private GameObject testObject;
         public GameObject character;
+        private int collisionsDetected;
         [SetUp]
         public void SetUp(){
          
@@ -31,14 +32,15 @@ namespace Tests
             int i = 0;
             SetUp();
             
-            for(i = 0; i <= 1000; i++){
+            for(i = 0; i < 1000; i++){
                 
                 character = GameObject.Instantiate(prefab, new Vector3(-1.5f, 4, 0), Quaternion.identity);           
-                character.transform.position = Vector2.MoveTowards(character.transform.position, new Vector2(3, 5), 2 * Time.deltaTime);
+                collisionsDetected = character.detected + collisionsDetected;
             
             }
+            
 
-            Assert.AreEqual(i, 1000);
+            Assert.isEqual(collisionsDetected, 1000);
             yield return null;
         }
 

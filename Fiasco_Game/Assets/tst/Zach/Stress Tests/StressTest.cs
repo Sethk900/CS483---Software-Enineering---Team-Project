@@ -13,7 +13,7 @@ namespace Tests
 {
     public class StressTest
     {      
-        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole.prefab");
+        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole/mole.prefab");
         private GameObject testObject;
         public GameObject character;
         [SetUp]

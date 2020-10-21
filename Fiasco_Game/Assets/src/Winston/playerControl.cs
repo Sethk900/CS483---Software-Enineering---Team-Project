@@ -80,7 +80,7 @@ public class playerControl : MonoBehaviour
             if (col.gameObject.tag.Equals("worm"))
             {
                 lastDamaged = Time.time;
-                DamagePlayer(10);
+                DamagePlayer(DifficultyImplementation.PlayerDamage);
             }
         }
     }
@@ -89,7 +89,8 @@ public class playerControl : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("EnemyBullet"))
         {
-            DamagePlayer(10);
+			DamagePlayer(DifficultyImplementation.PlayerDamage);
+            //DamagePlayer(10);
         }
     }
 

@@ -4,7 +4,7 @@ using UnityEngine.Audio;
 
 public class genericAudioManager : MonoBehaviour
 {
-    public static AudioManager instance;
+    public static genericAudioManager instance;
 
 	public AudioMixerGroup mixerGroup;
 

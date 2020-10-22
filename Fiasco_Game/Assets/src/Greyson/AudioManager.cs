@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 
 //Call with FindObjectOfType<AudioManager>().Play("Name");
-public class AudioManager : genericAudioManager //persistent version of genericAudioManager
+public class AudioManager : GenericAudioManager //persistent version of genericAudioManager
 {
 
 	protected override void Awake()
@@ -21,14 +21,16 @@ public class AudioManager : genericAudioManager //persistent version of genericA
 			DontDestroyOnLoad(gameObject);
 		}
 
-		/*foreach (Sound s in sounds)
+		/*
+		foreach (Sound s in sounds)
 		{
 			s.source = gameObject.AddComponent<AudioSource>();
 			s.source.clip = s.clip;
 			s.source.loop = s.loop;
 
 			s.source.outputAudioMixerGroup = mixerGroup;
-		}*/
+		}
+		*/
 	}
 
 }

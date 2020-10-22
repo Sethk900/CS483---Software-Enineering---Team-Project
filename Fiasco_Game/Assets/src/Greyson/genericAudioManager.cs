@@ -2,9 +2,9 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class genericAudioManager : MonoBehaviour
+public class GenericAudioManager : MonoBehaviour
 {
-    public static genericAudioManager instance;
+    public static GenericAudioManager instance;
 
 	public AudioMixerGroup mixerGroup;
 
@@ -12,7 +12,7 @@ public class genericAudioManager : MonoBehaviour
 
     protected virtual void Awake() {
 
-    Debug.Log("genericAudioManager awake!");
+    Debug.Log("GenericAudioManager awake!");
         foreach (Sound s in sounds)
 		{
 			s.source = gameObject.AddComponent<AudioSource>();

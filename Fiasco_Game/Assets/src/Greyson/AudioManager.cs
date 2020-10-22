@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 
 //Call with FindObjectOfType<AudioManager>().Play("Name");
-public class audioManager : genericAudioManager //persistent version of genericAudioManager
+public class AudioManager : GenericAudioManager //persistent version of genericAudioManager
 {
 
 	protected override void Awake()

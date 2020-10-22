@@ -13,11 +13,7 @@ namespace Tests
 {
     public class StressTest
     {      
-<<<<<<< HEAD
-        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/moleTest/moleTest.prefab");
-=======
-        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/src/Zach/Shooter/mole/mole.prefab");
->>>>>>> fbfcec9f4e9cdae5811ed4bd254d0f1ba8856d6d
+        private GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/tst/Zach/Stress Tests/moleTest/moleTest.prefab");
         private GameObject testObject;
         public GameObject character;
         private int collisionsDetected;
@@ -34,17 +30,19 @@ namespace Tests
         public IEnumerator StressTestPasses()
         {
             int i = 0;
+            moleControlTest moleVars;
             SetUp();
             
             for(i = 0; i < 1000; i++){
                 
                 character = GameObject.Instantiate(prefab, new Vector3(-1.5f, 4, 0), Quaternion.identity);           
-                collisionsDetected = character.detected + collisionsDetected;
+                moleVars = character.GetComponent<moleControlTest>();
+                collisionsDetected = moleVars.detected + collisionsDetected;
             
             }
             
 
-            Assert.isEqual(collisionsDetected, 1000);
+            Assert.AreEqual(collisionsDetected, 1000);
             yield return null;
         }
 

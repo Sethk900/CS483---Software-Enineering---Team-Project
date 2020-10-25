@@ -11,6 +11,7 @@ TagManager:
   - PlayerBullet
   - worm
   - moleTest
+  - ShowOnPause
   layers:
   - Default
   - TransparentFX

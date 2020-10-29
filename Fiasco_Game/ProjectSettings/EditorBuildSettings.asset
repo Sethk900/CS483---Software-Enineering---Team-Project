@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 5b1cfa50c885a8e46888d2821dbda3de
+  - enabled: 1
+    path: Assets/Scenes/DemoMode.unity
+    guid: 452afdfd47b210c44af550b2cca84262
   m_configObjects: {}

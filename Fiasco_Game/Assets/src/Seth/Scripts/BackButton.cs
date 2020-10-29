@@ -18,6 +18,7 @@ public class BackButton : MonoBehaviour
     }
 	
 	   public void PressBackButton(){
+        FindObjectOfType<AudioManager>().Play("Cancel"); // - Greyson
         SceneManager.LoadScene("StartScreen");
 	}
 }

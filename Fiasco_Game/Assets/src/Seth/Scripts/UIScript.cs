@@ -3,8 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class UIScript : MonoBehaviour
 {
+/*
+	//Implement the class as a Singleton
+	static UIScript UIScriptInstance;
+ 
+    public static UIScript Instance
+    {
+        get
+        {
+            if (UIScriptInstance == null) UIScriptInstance = new UIScript();
+            return UIScriptInstance;
+        }
+    }*/
 
     // These public variables allow us to track health and score
     public static int score = 0;

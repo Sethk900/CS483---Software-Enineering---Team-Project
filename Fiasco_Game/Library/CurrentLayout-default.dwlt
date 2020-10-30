@@ -8,23 +8,97 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 0
+    y: 12
+    width: 1920
+    height: 1028
+  m_ShowMode: 0
+  m_Title: Test Runner
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_Maximized: 0
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 7.3333335
-    y: 50
-    width: 1278.6667
-    height: 1342.6667
+    x: -1366
+    y: 356
+    width: 1366
+    height: 685
   m_ShowMode: 4
-  m_Title: Game
-  m_RootView: {fileID: 6}
+  m_Title: Console
+  m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
---- !u!114 &2
+  m_Maximized: 1
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestRunnerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1028
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1028
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 323
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,19 +111,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
-  - {fileID: 3}
+  - {fileID: 12}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1279
-    height: 1293
+    width: 1366
+    height: 635
   m_MinSize: {x: 679, y: 342}
   m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 96
---- !u!114 &3
+  controlID: 68
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,19 +138,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 752
+    x: 1071
     y: 0
-    width: 527
-    height: 1293
+    width: 295
+    height: 635
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 12}
+  - {fileID: 18}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &4
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,16 +167,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 201
-    height: 743
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+    width: 224
+    height: 364
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &5
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,18 +192,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 743
-    width: 752
-    height: 550
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+    y: 364
+    width: 1071
+    height: 271
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 13}
-  - {fileID: 18}
+  - {fileID: 17}
+  - {fileID: 22}
   m_Selected: 1
   m_LastSelected: 0
---- !u!114 &6
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,22 +216,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 2}
-  - {fileID: 8}
+  - {fileID: 10}
+  - {fileID: 5}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1279
-    height: 1343
-  m_MinSize: {x: 875, y: 392}
+    width: 1366
+    height: 685
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &7
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,15 +248,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1279
+    width: 1366
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 19}
-  m_MainToolbar: {fileID: 19}
+  - {fileID: 23}
+  m_MainToolbar: {fileID: 23}
   m_LastLoadedLayoutName: 
---- !u!114 &8
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,12 +272,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1323
-    width: 1279
+    y: 665
+    width: 1366
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &9
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,19 +290,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 5}
+  - {fileID: 13}
+  - {fileID: 8}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 752
-    height: 1293
+    width: 1071
+    height: 635
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 17
---- !u!114 &10
+  controlID: 69
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,19 +315,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 4}
-  - {fileID: 11}
+  - {fileID: 7}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 752
-    height: 743
+    width: 1071
+    height: 364
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 18
---- !u!114 &11
+  controlID: 70
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,19 +342,4260 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 201
+    x: 224
     y: 0
-    width: 551
-    height: 743
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+    width: 847
+    height: 364
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 17}
+  - {fileID: 20}
+  - {fileID: 21}
   m_Selected: 1
   m_LastSelected: 0
---- !u!114 &12
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 12
+    width: 1920
+    height: 1007
+  m_ViewDataDictionary: {fileID: 0}
+  m_Spl:
+    ID: 353
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes:
+    - 703
+    - 234
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 937
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 0}
+    newResultList: []
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories: []
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 15}
+    newResultList:
+    - id: 1000
+      uniqueId: '[Fiasco][suite]'
+      name: Fiasco
+      fullName: Fiasco
+      resultStatus: 2
+      duration: 1.9402001
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1004
+      uniqueId: '[EnemyTests.dll][suite]'
+      name: EnemyTests.dll
+      fullName: C:/Users/Seth King/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/EnemyTests.dll
+      resultStatus: 2
+      duration: 0.1072097
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Fiasco][suite]'
+    - id: 1005
+      uniqueId: EnemyTests.dll/[EnemyTests][Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 2
+      duration: 0.1053838
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[EnemyTests.dll][suite]'
+    - id: 1001
+      uniqueId: EnemyTests.dll/Tests/[EnemyTests][Tests.boundaryTests][suite]
+      name: boundaryTests
+      fullName: Tests.boundaryTests
+      resultStatus: 2
+      duration: 0.096775
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: EnemyTests.dll/[EnemyTests][Tests][suite]
+    - id: 1002
+      uniqueId: EnemyTests.dll/Tests/boundaryTests/[EnemyTests][Tests.boundaryTests.lowerBoundaryTestPasses]
+      name: lowerBoundaryTestPasses
+      fullName: Tests.boundaryTests.lowerBoundaryTestPasses
+      resultStatus: 1
+      duration: 0.0206088
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EnemyTests.dll/Tests/[EnemyTests][Tests.boundaryTests][suite]
+    - id: 1003
+      uniqueId: EnemyTests.dll/Tests/boundaryTests/[EnemyTests][Tests.boundaryTests.upperBoundaryTestPasses]
+      name: upperBoundaryTestPasses
+      fullName: Tests.boundaryTests.upperBoundaryTestPasses
+      resultStatus: 2
+      duration: 0.0503794
+      messages: "  Expected: 110\r\n  But was:  10\r\n"
+      output: 
+      stacktrace: 'at Tests.boundaryTests.upperBoundaryTestPasses () [0x00014] in
+        C:\Users\Seth King\Documents\GitHub\CS383_Team_Project\Fiasco_Game\Assets\tst\Zach\EnemyTests\boundaryTests.cs:31
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EnemyTests.dll/Tests/[EnemyTests][Tests.boundaryTests][suite]
+    - id: 1010
+      uniqueId: '[GreysonTests.dll][suite]'
+      name: GreysonTests.dll
+      fullName: C:/Users/Seth King/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/GreysonTests.dll
+      resultStatus: 2
+      duration: 0.0528486
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Fiasco][suite]'
+    - id: 1011
+      uniqueId: GreysonTests.dll/[GreysonTests][Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 2
+      duration: 0.0343283
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1010
+      parentUniqueId: '[GreysonTests.dll][suite]'
+    - id: 1006
+      uniqueId: GreysonTests.dll/Tests/[GreysonTests][Tests.BoundaryTest1][suite]
+      name: BoundaryTest1
+      fullName: Tests.BoundaryTest1
+      resultStatus: 2
+      duration: 0.0156976
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: GreysonTests.dll/[GreysonTests][Tests][suite]
+    - id: 1007
+      uniqueId: GreysonTests.dll/Tests/BoundaryTest1/[GreysonTests][Tests.BoundaryTest1.BoundaryTest1SimplePasses]
+      name: BoundaryTest1SimplePasses
+      fullName: Tests.BoundaryTest1.BoundaryTest1SimplePasses
+      resultStatus: 2
+      duration: 0.0043679
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at Tests.BoundaryTest1.BoundaryTest1SimplePasses () [0x00008]
+        in C:\\Users\\Seth King\\Documents\\GitHub\\CS383_Team_Project\\Fiasco_Game\\Assets\\tst\\Greyson\\Tests\\BoundaryTest1.cs:20
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <fb001e01371b4adca20013e0ac763896>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: GreysonTests.dll/Tests/[GreysonTests][Tests.BoundaryTest1][suite]
+    - id: 1008
+      uniqueId: GreysonTests.dll/Tests/[GreysonTests][Tests.BoundaryTest2][suite]
+      name: BoundaryTest2
+      fullName: Tests.BoundaryTest2
+      resultStatus: 2
+      duration: 0.015981
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: GreysonTests.dll/[GreysonTests][Tests][suite]
+    - id: 1009
+      uniqueId: GreysonTests.dll/Tests/BoundaryTest2/[GreysonTests][Tests.BoundaryTest2.BoundaryTest2SimplePasses]
+      name: BoundaryTest2SimplePasses
+      fullName: Tests.BoundaryTest2.BoundaryTest2SimplePasses
+      resultStatus: 2
+      duration: 0.0018867
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at Tests.BoundaryTest2.BoundaryTest2SimplePasses () [0x00008]
+        in C:\\Users\\Seth King\\Documents\\GitHub\\CS383_Team_Project\\Fiasco_Game\\Assets\\tst\\Greyson\\Tests\\BoundaryTest2.cs:20
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <fb001e01371b4adca20013e0ac763896>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: GreysonTests.dll/Tests/[GreysonTests][Tests.BoundaryTest2][suite]
+    - id: 1016
+      uniqueId: '[LevelLoaderTest.dll][suite]'
+      name: LevelLoaderTest.dll
+      fullName: C:/Users/Seth King/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/LevelLoaderTest.dll
+      resultStatus: 1
+      duration: 0.0669274
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Fiasco][suite]'
+    - id: 1017
+      uniqueId: LevelLoaderTest.dll/[LevelLoaderTest][suite]
+      name: LevelLoaderTest
+      fullName: LevelLoaderTest
+      resultStatus: 1
+      duration: 0.0581423
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: '[LevelLoaderTest.dll][suite]'
+    - id: 1012
+      uniqueId: LevelLoaderTest.dll/LevelLoaderTest/[LevelLoaderTest][LevelLoaderTest.LevelLoaderInnerBoundry][suite]
+      name: LevelLoaderInnerBoundry
+      fullName: LevelLoaderTest.LevelLoaderInnerBoundry
+      resultStatus: 1
+      duration: 0.0320635
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1017
+      parentUniqueId: LevelLoaderTest.dll/[LevelLoaderTest][suite]
+    - id: 1013
+      uniqueId: LevelLoaderTest.dll/LevelLoaderTest/LevelLoaderInnerBoundry/[LevelLoaderTest][LevelLoaderTest.LevelLoaderInnerBoundry.LevelLoaderInnerBoundryPasses]
+      name: LevelLoaderInnerBoundryPasses
+      fullName: LevelLoaderTest.LevelLoaderInnerBoundry.LevelLoaderInnerBoundryPasses
+      resultStatus: 1
+      duration: 0.0157342
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+        Invalid Build_Idx
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: LevelLoaderTest.dll/LevelLoaderTest/[LevelLoaderTest][LevelLoaderTest.LevelLoaderInnerBoundry][suite]
+    - id: 1014
+      uniqueId: LevelLoaderTest.dll/LevelLoaderTest/[LevelLoaderTest][LevelLoaderTest.LevelLoaderOuterBoundry][suite]
+      name: LevelLoaderOuterBoundry
+      fullName: LevelLoaderTest.LevelLoaderOuterBoundry
+      resultStatus: 1
+      duration: 0.023395
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1017
+      parentUniqueId: LevelLoaderTest.dll/[LevelLoaderTest][suite]
+    - id: 1015
+      uniqueId: LevelLoaderTest.dll/LevelLoaderTest/LevelLoaderOuterBoundry/[LevelLoaderTest][LevelLoaderTest.LevelLoaderOuterBoundry.LevelLoaderOuterBoundryPasses]
+      name: LevelLoaderOuterBoundryPasses
+      fullName: LevelLoaderTest.LevelLoaderOuterBoundry.LevelLoaderOuterBoundryPasses
+      resultStatus: 1
+      duration: 0.0062179
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+        Invalid Build_Idx
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: LevelLoaderTest.dll/LevelLoaderTest/[LevelLoaderTest][LevelLoaderTest.LevelLoaderOuterBoundry][suite]
+    - id: 1022
+      uniqueId: '[Tests.dll][suite]'
+      name: Tests.dll
+      fullName: C:/Users/Seth King/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 2
+      duration: 1.6147828
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Fiasco][suite]'
+    - id: 1023
+      uniqueId: Tests.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 2
+      duration: 1.5836915
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: '[Tests.dll][suite]'
+    - id: 1018
+      uniqueId: Tests.dll/Tests/[Tests][Tests.HPInnerBoundaryTest][suite]
+      name: HPInnerBoundaryTest
+      fullName: Tests.HPInnerBoundaryTest
+      resultStatus: 2
+      duration: 0.0186279
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1023
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1019
+      uniqueId: Tests.dll/Tests/HPInnerBoundaryTest/[Tests][Tests.HPInnerBoundaryTest.HPInnerBoundaryTestSimplePasses]
+      name: HPInnerBoundaryTestSimplePasses
+      fullName: Tests.HPInnerBoundaryTest.HPInnerBoundaryTestSimplePasses
+      resultStatus: 2
+      duration: 0.0022173
+      messages: "  Expected: 10\r\n  But was:  100\r\n"
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 'at Tests.HPInnerBoundaryTest.HPInnerBoundaryTestSimplePasses ()
+        [0x00044] in C:\Users\Seth King\Documents\GitHub\CS383_Team_Project\Fiasco_Game\Assets\tst\Seth\BoundaryTests\HPInnerBoundary.cs:32
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1018
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.HPInnerBoundaryTest][suite]
+    - id: 1020
+      uniqueId: Tests.dll/Tests/[Tests][Tests.HPOuterBoundaryTest][suite]
+      name: HPOuterBoundaryTest
+      fullName: Tests.HPOuterBoundaryTest
+      resultStatus: 1
+      duration: 1.5411549
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1023
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1021
+      uniqueId: Tests.dll/Tests/HPOuterBoundaryTest/[Tests][Tests.HPOuterBoundaryTest.HPOuterBoundaryTestSimplePasses]
+      name: HPOuterBoundaryTestSimplePasses
+      fullName: Tests.HPOuterBoundaryTest.HPOuterBoundaryTestSimplePasses
+      resultStatus: 1
+      duration: 1.5138645
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+        Player would have died here.
+
+        Player would have
+        died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+        Player would
+        have died here.
+
+        Player would have died here.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.HPOuterBoundaryTest][suite]
+    m_ResultText: 'HPOuterBoundaryTestSimplePasses (1.514s)
+
+      ---
+
+      You
+      are trying to create a MonoBehaviour using the ''new'' keyword.  This is not
+      allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+      your script can inherit from ScriptableObject or no base class at all
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died here.
+
+      Player would have died here.
+
+      Player would have died
+      here.
+
+      Player would have died here.
+
+      Player would have died here.
+
+      Player
+      would have died here.
+
+      Player would have died here.
+
+      Player would
+      have died here.
+
+      Player would have died here.
+
+      Player would have
+      died he...
+
+
+      ---MESSAGE TRUNCATED AT 15000 CHARACTERS---'
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 5731b32c
+      m_LastClickedID: 749941079
+      m_ExpandedIDs: 35f78392a72ec993fb79e2c5eb5c56dde86c89dd676349e79f81f9eae557abf7dceabe01dc55670f5b9730338359db411853e54829958e5a44f1126d7e554a7affffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -305,7 +4620,7 @@ MonoBehaviour:
     width: 790
     height: 926
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &13
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -325,10 +4640,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0.6666667
-    y: 826
-    width: 751
-    height: 532.3334
+    x: -1366
+    y: 750
+    width: 1070
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -343,21 +4658,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/src/Winston
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/src/Winston
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\greys\Desktop\CS383_Team_Project\Fiasco_Game
+  m_LastProjectPath: C:\Users\Seth King\Documents\GitHub\CS383_Team_Project\Fiasco_Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 80.33331}
-    m_SelectedIDs: 363f0000
-    m_LastClickedID: 16182
-    m_ExpandedIDs: 00000000bcd50000f0d90000f2d90000f4d90000f6d90000f8d90000fad90000fcd90000fed9000000da000002da000004da000006da000008da00000ada00000cda00000eda000010da000012da000014da000016da000018da0000
+    scrollPos: {x: 0, y: 151.34077}
+    m_SelectedIDs: f63f0000
+    m_LastClickedID: 16374
+    m_ExpandedIDs: 00000000f63e0000f83e0000fa3e0000fc3e0000fe3e0000003f0000023f0000043f0000063f0000083f00000a3f00000c3f00000e3f0000103f0000123f0000143f0000163f0000183f00001a3f00002c3f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -373,7 +4688,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 8}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -385,7 +4700,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bcd50000f0d90000f2d90000f4d90000f6d90000f8d90000fad90000fcd90000fed9000000da000002da000004da000006da000008da00000ada00000cda00000eda000010da000012da000014da000016da000018da0000
+    m_ExpandedIDs: 00000000f63e0000f83e0000fa3e0000fc3e0000fe3e0000003f0000023f0000043f0000063f0000083f00000a3f00000c3f00000e3f0000103f0000123f0000143f0000163f0000183f00001a3f00001c3f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -410,8 +4725,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 7a720000
-    m_LastClickedInstanceID: 29306
+    m_SelectedInstanceIDs: c0350000
+    m_LastClickedInstanceID: 13760
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -429,7 +4744,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -441,7 +4756,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &14
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -457,14 +4772,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 759.3334
-    y: 80
-    width: 525
-    height: 1272
+    x: -295
+    y: 386
+    width: 294
+    height: 614
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -473,13 +4788,13 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 86.21849
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &15
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -499,17 +4814,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.3333335
-    y: 80
-    width: 200
-    height: 722
+    x: -1366
+    y: 386
+    width: 223
+    height: 343
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: c0350000
       m_LastClickedID: 0
-      m_ExpandedIDs: d4acfeff
+      m_ExpandedIDs: 7cf7ffff2ef8ffffd2f8ffffecf9ffffbefaffff5afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -525,7 +4840,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 4}
+        m_ClientGUIView: {fileID: 7}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -533,7 +4848,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -649,7 +4964,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &17
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -669,10 +4984,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 208.66667
-    y: 80
-    width: 549
-    height: 722
+    x: -1142
+    y: 386
+    width: 845
+    height: 343
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -680,7 +4995,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 549, y: 701}
+  m_TargetSize: {x: 845, y: 322}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -695,10 +5010,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -183
-    m_HBaseRangeMax: 183
-    m_VBaseRangeMin: -233.66667
-    m_VBaseRangeMax: 233.66667
+    m_HBaseRangeMin: -422.5
+    m_HBaseRangeMax: 422.5
+    m_VBaseRangeMin: -161
+    m_VBaseRangeMax: 161
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -716,29 +5031,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 549
-      height: 701
+      width: 845
+      height: 322
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 274.5, y: 350.5}
+    m_Translation: {x: 422.5, y: 161}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -274.5
-      y: -350.5
-      width: 549
-      height: 701
+      x: -422.5
+      y: -161
+      width: 845
+      height: 322
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 823.5, y: 1083}
+  m_LastWindowPixelSize: {x: 845, y: 343}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -758,12 +5073,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.3333335
-    y: 823.3334
-    width: 751
-    height: 529
+    x: -1366
+    y: 750
+    width: 1070
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &19
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

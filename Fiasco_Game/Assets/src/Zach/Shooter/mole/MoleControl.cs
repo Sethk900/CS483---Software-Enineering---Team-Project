@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MoleControl : MonoBehaviour
 {
+	public Animator animator;
 	//Enemy Parameters
 	public float health = 10f;
 	public float bulletSpeed = 10f;
-	public float bulletFrequency = 300;
+	public float bulletFrequency = 150;
 
 	//Used to track update cycles since last bullet
 	public float bulletTimer;
@@ -16,6 +17,7 @@ public class MoleControl : MonoBehaviour
 	public Rigidbody2D rb;	
 	public playerControl thePlayer;
 	public GameObject bulletPrefab;
+	public float timer;
 	
 	//Vector of where the player is and getting the bullet script
 	Vector2 playerDirection;
@@ -34,6 +36,10 @@ public class MoleControl : MonoBehaviour
 	{
 		playerDirection = thePlayer.rb.position - rb.position;
 		playerDirection.Normalize();
+		if(timer >= 0)
+		{
+		timer -= Time.deltaTime;
+		}
 	}
 
 	/* 
@@ -44,6 +50,10 @@ public class MoleControl : MonoBehaviour
 	void FixedUpdate () 
 	{
 		AttackBehavior();
+		if(timer <= 0)
+		{
+		animator.SetBool("damaged", false);
+		}
     }
 	
 	//Handle collisions
@@ -52,6 +62,8 @@ public class MoleControl : MonoBehaviour
 		if (col.gameObject.tag.Equals("PlayerBullet")) 
 		{
 			DamageEnemy(2.5f);
+			timer = 0.25f;
+			animator.SetBool("damaged", true);
 		}
 	}
 
@@ -60,7 +72,7 @@ public class MoleControl : MonoBehaviour
 	{
 		if (bulletTimer == bulletFrequency) 
 		{
-			bcInst.Shoot(rb.position, playerDirection, bulletSpeed, bulletPrefab);
+			bcInst.Shoot(rb.position, thePlayer.rb.position, bulletSpeed, bulletPrefab);
 			bulletTimer = 0;
 		} else 
 		{

@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
 	private Rigidbody2D rb;	
 	public playerControl thePlayer;
 	private Vector3 theScale;
+	private bool flipped;
     // Start is called before the first frame update
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -25,32 +26,42 @@ public class EnemyMovement : MonoBehaviour
 	void FixedUpdate() {
 		//Move enemy
 		
-		if(transform.position.y > thePlayer.rb.position.y)
+		if(transform.position.y < thePlayer.rb.position.y - 2)
 		{
 		   animator.SetBool("up", true);
 		   animator.SetBool("down", false);
 		   animator.SetBool("walk", false);
 		} 
-		else if(transform.position.y < thePlayer.rb.position.y)
+		else if(transform.position.y > thePlayer.rb.position.y + 2)
 		{
 		   animator.SetBool("up", false);
 		   animator.SetBool("down", true);
 		   animator.SetBool("walk", false);
-		}
-		if(transform.position.y == thePlayer.rb.position.y && transform.position.x < thePlayer.rb.position.x)
+		} 
+		else if(transform.position.y <= thePlayer.rb.position.y + 2 && transform.position.y >= thePlayer.rb.position.y - 2 && transform.position.x > thePlayer.rb.position.x)
 		{
 		   animator.SetBool("up", false);
 		   animator.SetBool("down", false);
 		   animator.SetBool("walk", true);
-		   theScale.x = 1;
+		   if(flipped != true)
+		   {
+		   theScale = transform.localScale;
+		   theScale.x *= -1;
+	       flipped = true;
            transform.localScale = theScale;
+		   }
 		} 
-		else if(transform.position.y == thePlayer.rb.position.y && transform.position.x > thePlayer.rb.position.x){
+		else if(transform.position.y <= thePlayer.rb.position.y + 2 && transform.position.y >= thePlayer.rb.position.y - 2 && transform.position.x < thePlayer.rb.position.x){
 		   animator.SetBool("up", false);
 		   animator.SetBool("down", false);
 		   animator.SetBool("walk", true);
-		   theScale.x = -1;
-           transform.localScale = theScale;
+		   theScale = transform.localScale;
+		   if(flipped == true)
+		   {
+		   flipped = false;
+		   theScale.x *= -1;
+		   }
+		   transform.localScale = theScale;
 		}
 		transform.position = Vector2.MoveTowards(transform.position, thePlayer.rb.position, moveSpeed * Time.deltaTime);
 		

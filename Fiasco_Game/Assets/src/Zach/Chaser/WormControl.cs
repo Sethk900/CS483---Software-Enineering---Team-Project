@@ -11,7 +11,7 @@ public class WormControl : MonoBehaviour
 
 	public Rigidbody2D rb;	
 	public playerControl thePlayer;
-
+	public float timer = -1;
 	Vector2 playerDirection;
 
 	// Start is called before the first frame update
@@ -28,7 +28,10 @@ public class WormControl : MonoBehaviour
 	{
 		playerDirection = thePlayer.rb.position - rb.position;
 		playerDirection.Normalize();
-		animator.SetBool("damaged", false);
+		if(timer >= 0)
+		{
+		timer -= Time.deltaTime;
+		}
 	}
 	
 	/* 
@@ -38,8 +41,10 @@ public class WormControl : MonoBehaviour
 	*/
 	void FixedUpdate () 
 	{
-		
-        
+		if(timer <= 0)
+		{
+		animator.SetBool("damaged", false);
+		} 
 	}
 	
 	//Handle collisions
@@ -48,8 +53,10 @@ public class WormControl : MonoBehaviour
 		if (col.gameObject.tag.Equals("PlayerBullet")) 
 		{
 			DamageEnemy(2.5f);
+			timer = 0.25f;
 			animator.SetBool("damaged", true);
 		}
+		
 	}
 
 	

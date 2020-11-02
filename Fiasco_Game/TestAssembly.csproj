@@ -64,6 +64,7 @@
      <Compile Include="Assets\src\Seth\Scripts\DifficultyImplementation.cs" />
      <Compile Include="Assets\src\Seth\Scripts\UIScript.cs" />
      <Compile Include="Assets\src\Seth\Scripts\OptionsButton.cs" />
+     <Compile Include="Assets\src\Seth\Scripts\ButtonsConsolidated.cs" />
      <Compile Include="Assets\src\Greyson\SoundAssets.cs" />
      <Compile Include="Assets\src\Winston\playerControl.cs" />
      <Compile Include="Assets\src\Greyson\genericAudioManager.cs" />

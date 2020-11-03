@@ -11,7 +11,7 @@ namespace Tests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void HPInnerBoundaryTestSimplePasses()
+        public void HUDStressTestSimplePasses()
         {
 			HealthLogic test = new HealthLogic();
 			
@@ -29,7 +29,7 @@ namespace Tests
 				test.DamagePlayer(1);
 			}
 			
-			Assert.AreEqual(UIScript.health, expected_hp);
+			Assert.AreEqual(expected_hp, test.health);
         }
 		
 	

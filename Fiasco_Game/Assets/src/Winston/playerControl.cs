@@ -97,7 +97,6 @@ public class playerControl : MonoBehaviour
     // Handle Enemy taking damage
     public void DamagePlayer(int damage)
     {
-        //FindObjectOfType<AudioManager>().Play("PlayerHurt"); // - Greyson
         if (health > 0) health -= damage;
         UIScript.health -= damage;
         if (UIScript.health <= 0)
@@ -109,10 +108,8 @@ public class playerControl : MonoBehaviour
     // Function called on player death
     void PlayerDeath()
     {
-        FindObjectOfType<AudioManager>().Play("PlayerDeath"); // - Greyson
-        //Destroy(gameObject); // Comment out without adverse effects? This causes crashes at the death screen - Greyson
+        Destroy(gameObject);
         SceneManager.LoadScene("DeathScreen");
-        FindObjectOfType<AudioManager>().Play("PlayerDeath"); // - Greyson       
     }
 }
 

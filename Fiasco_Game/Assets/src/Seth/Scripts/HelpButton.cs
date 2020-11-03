@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-/*
+
 public class HelpButton : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -21,4 +21,3 @@ public class HelpButton : MonoBehaviour
         SceneManager.LoadScene("HelpScreen");
 	}
 }
-*/

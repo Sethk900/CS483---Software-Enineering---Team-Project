@@ -78,13 +78,13 @@
      <Compile Include="Assets\src\Seth\Scripts\BackButton.cs" />
      <Compile Include="Assets\src\Max\DemoMode\Scripts\DemoTimer.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\BulletPool.cs" />
+     <Compile Include="Assets\src\Seth\Scripts\ButtonsConsolidated.cs" />
      <Compile Include="Assets\src\Taylor\CameraMovement.cs" />
      <Compile Include="Assets\src\Max\DemoMode\Scripts\DemoPlayer.cs" />
      <Compile Include="Assets\src\Taylor\LevelLoader.cs" />
      <Compile Include="Assets\src\Greyson\EnemyMovement.cs" />
      <Compile Include="Assets\src\Zach\Sprayer\BeetleControl.cs" />
      <Compile Include="Assets\src\Seth\Scripts\StartButton.cs" />
-     <Compile Include="Assets\src\Seth\Scripts\ButtonsConsolidated.cs" />
      <None Include="Assets\src\TestAssembly.asmdef" />
      <None Include="Assets\src\Winston\init.txt" />
      <None Include="Assets\src\Taylor\init.txt" />
@@ -92,10 +92,10 @@
      <None Include="Assets\src\Greyson\init.txt" />
      <None Include="Assets\src\Zach\init.txt" />
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Seth King/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/cougf/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Seth King/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/cougf/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -6,9 +6,9 @@ public class DifficultyImplementation : MonoBehaviour
 {
 
 	// This variable governs how much damage is done to the player each time they are hit
-	public static int PlayerDamage;
+	public static int PlayerDamage = 10;
 	// This variable governs how much an enemy is damaged when the player hits them
-	public static int EnemyDamage;
+	public static int EnemyDamage = 10;
 
     // Start is called before the first frame update
     void Start()

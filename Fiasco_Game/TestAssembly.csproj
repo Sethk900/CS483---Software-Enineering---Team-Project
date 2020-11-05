@@ -56,34 +56,37 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\src\Greyson\Sound.cs" />
-     <Compile Include="Assets\src\Max\BulletManage\Scripts\bullet.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\bullet.cs" />
      <Compile Include="Assets\src\Greyson\OldSoundManager2.cs" />
-     <Compile Include="Assets\src\Max\BulletManage\Scripts\Shoot.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\Shoot.cs" />
      <Compile Include="Assets\src\Zach\EnemyControl.cs" />
      <Compile Include="Assets\src\Greyson\SetVolume.cs" />
      <Compile Include="Assets\src\Seth\Scripts\DifficultyImplementation.cs" />
      <Compile Include="Assets\src\Seth\Scripts\UIScript.cs" />
      <Compile Include="Assets\src\Seth\Scripts\OptionsButton.cs" />
      <Compile Include="Assets\src\Greyson\SoundAssets.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\Fire.cs" />
      <Compile Include="Assets\src\Winston\playerControl.cs" />
      <Compile Include="Assets\src\Greyson\genericAudioManager.cs" />
      <Compile Include="Assets\src\Zach\Chaser\WormControl.cs" />
      <Compile Include="Assets\src\Greyson\OldSoundManager1.cs" />
-     <Compile Include="Assets\src\Max\BulletManage\Scripts\BulletUpdated.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\BulletUpdated.cs" />
      <Compile Include="Assets\src\Seth\Scripts\HelpButton.cs" />
-     <Compile Include="Assets\src\Max\BulletManage\Scripts\bulletControl.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\ObjectPool.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\bulletControl.cs" />
      <Compile Include="Assets\src\Greyson\AudioManager.cs" />
      <Compile Include="Assets\src\Zach\Shooter\mole\MoleControl.cs" />
      <Compile Include="Assets\src\Max\DemoMode\Scripts\ExitDemo.cs" />
      <Compile Include="Assets\src\Seth\Scripts\BackButton.cs" />
      <Compile Include="Assets\src\Max\DemoMode\Scripts\DemoTimer.cs" />
-     <Compile Include="Assets\src\Max\BulletManage\Scripts\BulletPool.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\BulletPool.cs" />
      <Compile Include="Assets\src\Seth\Scripts\ButtonsConsolidated.cs" />
      <Compile Include="Assets\src\Taylor\CameraMovement.cs" />
      <Compile Include="Assets\src\Max\DemoMode\Scripts\DemoPlayer.cs" />
      <Compile Include="Assets\src\Taylor\LevelLoader.cs" />
      <Compile Include="Assets\src\Greyson\EnemyMovement.cs" />
      <Compile Include="Assets\src\Zach\Sprayer\BeetleControl.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\Projectile.cs" />
      <Compile Include="Assets\src\Seth\Scripts\StartButton.cs" />
      <None Include="Assets\src\TestAssembly.asmdef" />
      <None Include="Assets\src\Winston\init.txt" />
@@ -92,10 +95,10 @@
      <None Include="Assets\src\Greyson\init.txt" />
      <None Include="Assets\src\Zach\init.txt" />
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/cougf/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Seth King/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/cougf/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Seth King/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

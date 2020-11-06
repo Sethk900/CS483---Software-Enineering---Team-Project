@@ -22,10 +22,9 @@ public class interactableLevelObject : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E) && playerInRange){
 			if(dialogBox.activeInHierarchy){
-				dialogBox.SetActive(false);
-				prompt.SetActive(false);
+				DeActivate();
 			} else {
-				dialogBox.SetActive(true);
+				Activate();
 			}
 		}
     }
@@ -42,5 +41,13 @@ public class interactableLevelObject : MonoBehaviour
 			playerInRange = false;
 			prompt.SetActive(false);
 		}
+	}
+	
+	public virtual void Activate(){
+		dialogBox.SetActive(true);
+	}
+	
+	public virtual void DeActivate(){
+		dialogBox.SetActive(false);
 	}
 }

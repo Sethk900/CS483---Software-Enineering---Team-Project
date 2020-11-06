@@ -76,6 +76,7 @@
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\BulletUpdated.cs" />
      <Compile Include="Assets\src\Seth\Scripts\HelpButton.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\ObjectPool.cs" />
+     <Compile Include="Assets\src\Taylor\subClass.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\bulletControl.cs" />
      <Compile Include="Assets\src\Greyson\AudioManager.cs" />
      <Compile Include="Assets\src\Zach\Shooter\mole\MoleControl.cs" />
@@ -92,7 +93,6 @@
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\Projectile.cs" />
      <Compile Include="Assets\src\Taylor\interactableLevelObject.cs" />
      <Compile Include="Assets\src\Seth\Scripts\StartButton.cs" />
-     <Compile Include="Assets\src\Taylor\subClass.cs" />
      <None Include="Assets\src\TestAssembly.asmdef" />
      <None Include="Assets\src\Taylor\init.txt" />
      <None Include="Assets\src\Max\init.txt" />

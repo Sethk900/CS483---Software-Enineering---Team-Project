@@ -5,9 +5,10 @@ using UnityEngine;
 public class subClass : interactableLevelObject
 {
 	public LevelLoader loader;
+	public int nextLevel;
 	
 	public override void Activate(){
-		loader.LoadLevel(2);
+		loader.LoadLevel(nextLevel);
 		Debug.Log("Subclass");
 	}
 }

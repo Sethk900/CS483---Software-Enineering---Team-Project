@@ -11,6 +11,21 @@ public class UIScript : MonoBehaviour
     public static int health = 100;
     Text HUD;
 	GameObject[] pauseObjects;
+
+	// Implement the class as a Singleton
+	private UIScript() { }
+	public static UIScript Instance {
+	get {
+	return Nested.instance;
+		}
+	}
+	private class Nested {
+		// Explicit static constructor to tell C# compiler
+		// not to mark type as beforefieldinit
+		static Nested() { }
+		internal static readonly UIScript instance = new UIScript();
+	}
+
 	
     // Start is called before the first frame update
     void Start()

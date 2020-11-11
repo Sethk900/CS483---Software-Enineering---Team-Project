@@ -46,7 +46,7 @@ public class objectPooler : MonoBehaviour
     }
 
     //take inactive objects and spawn into world by passing tag to spawn, where to spawn and quaternion for rotation
-    public GameObject SpawnFromPool (string tag, Vector3 position, Quaternion rotation){
+    public GameObject SpawnFromPool (string tag, Vector2 position, Quaternion rotation){
         
         //check to make sure tag is actually in poolDictionary
         if(!poolDictionary.ContainsKey(tag)){
@@ -56,7 +56,7 @@ public class objectPooler : MonoBehaviour
 
         //take first element from queue and store object as objectToSpawn
         GameObject objectToSpawn = poolDictionary[tag].Dequeue();
-    
+
         //configure objectToSpawn 
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = position;

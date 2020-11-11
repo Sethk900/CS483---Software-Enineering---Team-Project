@@ -77,7 +77,7 @@
      <Compile Include="Assets\src\Max\BulletManage\Scripts\Attempt 3\objectPooler.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\Attempt 3\enemyBulletSpawner.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\Attempt 3\IpooledObject.cs" />
-     <Compile Include="Assets\src\Max\BulletManage\Scripts\Attempt 3\enemyBullet.cs" />
+     <Compile Include="Assets\src\Max\BulletManage\Scripts\Attempt 3\bullet3.cs" />
      <None Include="Assets\src\TestAssembly.asmdef" />
      <None Include="Assets\src\Taylor\init.txt" />
      <None Include="Assets\src\Max\init.txt" />

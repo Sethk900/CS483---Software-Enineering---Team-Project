@@ -5,26 +5,20 @@ using UnityEngine.UI;
 
 public class interactableLevelObject : MonoBehaviour
 {
-	public GameObject dialogBox;
 	public GameObject prompt;
-	public Text dialogText;
-	public string dialog;
-	public bool playerInRange;
-	
-    // Start is called before the first frame update
-    void Start()
-    {
-		dialogText.text = dialog;
-    }
+	bool playerInRange;
+	bool objectActive;
 
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E) && playerInRange){
-			if(dialogBox.activeInHierarchy){
+			if(objectActive){
 				DeActivate();
+				objectActive = false;
 			} else {
 				Activate();
+				objectActive = true;
 			}
 		}
     }
@@ -44,10 +38,10 @@ public class interactableLevelObject : MonoBehaviour
 	}
 	
 	public virtual void Activate(){
-		dialogBox.SetActive(true);
+		Debug.Log("Activate");
 	}
 	
 	public virtual void DeActivate(){
-		dialogBox.SetActive(false);
+		Debug.Log("DeActivate");
 	}
 }

@@ -4,22 +4,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
-{
-	// Build indexes that map to scenes
-	// Must be manually updated
-	public int Lvl_1_Build_Idx = 0;
-	public int Lvl_2_Build_Idx = 1;
+{	
 	
 	public Animator transition;
-	
 	public float transitionTime = 1f;
 	
-    // Update is called once per frame
-    void Update() {
-        if (Input.GetButtonDown("Debug Next")) {
-			LoadLevel(Lvl_2_Build_Idx);
+	// Thread safe and lazy singleton implementation
+	private LevelLoader() {}
+	public static LevelLoader Instance {
+		get {
+			return Nested.instance;
 		}
-    }
+	}
+	
+	private class Nested {
+		// Explicit static constructor to tell C# compiler
+		// not to mark type as beforefieldinit
+		static Nested() {}
+		internal static readonly LevelLoader instance = new LevelLoader();
+	}
+	
 	// Load Scene using it's Build index
 	public int LoadLevel(int Build_Idx) {
 		if(SceneManager.sceneCountInBuildSettings < Build_Idx || 0 > Build_Idx) { 
@@ -30,7 +34,7 @@ public class LevelLoader : MonoBehaviour
 		return 0;
 	}
 	
-	//Coroutine for loading scene
+	//Coroutine for loading scene with animation
 	IEnumerator LoadLevelCoroutine(int Build_Idx) {
 		//Play Animation
 		transition.SetTrigger("Start");

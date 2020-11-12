@@ -13,14 +13,10 @@ namespace LevelLoaderTest
         [Test]
         public void LevelLoaderInnerBoundryPasses()
         {
-			LevelLoader test = new LevelLoader();
-			
-			int return_val = test.LoadLevel(-1);
+			int return_val = LevelLoader.Instance.LoadLevel(-1);
 			int expected_return = 1;
 			
 			Assert.AreEqual(expected_return, return_val);
         }
-		
-	
     }
 }

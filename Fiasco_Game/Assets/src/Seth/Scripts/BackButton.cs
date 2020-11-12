@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 /*
+
+	This code is deprecated. Backbutton is now implemented as one of the subclasses in the ButtonsConsolidated script.
+
 public class BackButton : MonoBehaviour
 {
     // Start is called before the first frame update

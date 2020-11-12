@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 /*
+
+	This code is now deprecated. The OptionsButton code is now implemented in the ButtonsConsolidated script.
+
 public class OptionsButton : MonoBehaviour
 {
     // Start is called before the first frame update

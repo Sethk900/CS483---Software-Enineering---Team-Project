@@ -48,6 +48,7 @@
      <Compile Include="Assets\src\Seth\Scripts\UIScript.cs" />
      <Compile Include="Assets\src\Zach\Boss\BossLeftFistBehavior.cs" />
      <Compile Include="Assets\src\Seth\Scripts\OptionsButton.cs" />
+     <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csLightControl.cs" />
      <Compile Include="Assets\src\Greyson\SoundAssets.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\Fire.cs" />
      <Compile Include="Assets\src\Winston\playerControl.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\src\Seth\Scripts\HelpButton.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\ObjectPool.cs" />
      <Compile Include="Assets\src\Taylor\sign.cs" />
+     <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\DestroyEffect.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\Attempt 3\objectPooler.cs" />
      <Compile Include="Assets\src\Taylor\door.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\bulletControl.cs" />
@@ -69,6 +71,7 @@
      <Compile Include="Assets\src\Seth\Scripts\BackButton.cs" />
      <Compile Include="Assets\src\Max\DemoMode\Scripts\DemoTimer.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 1\BulletPool.cs" />
+     <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csDemoScenceControl.cs" />
      <Compile Include="Assets\src\Seth\Scripts\ButtonsConsolidated.cs" />
      <Compile Include="Assets\src\Taylor\CameraMovement.cs" />
      <Compile Include="Assets\src\Max\DemoMode\Scripts\DemoPlayer.cs" />
@@ -76,13 +79,10 @@
      <Compile Include="Assets\src\Greyson\EnemyMovement.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\Attempt 3\enemyBullet.cs" />
      <Compile Include="Assets\src\Zach\Sprayer\BeetleControl.cs" />
+     <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csMouseOrbit.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\Projectile.cs" />
      <Compile Include="Assets\src\Taylor\interactableLevelObject.cs" />
      <Compile Include="Assets\src\Seth\Scripts\StartButton.cs" />
-     <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csLightControl.cs" />
-     <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\DestroyEffect.cs" />
-     <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csDemoScenceControl.cs" />
-     <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csMouseOrbit.cs" />
      <None Include="Assets\src\TestAssembly.asmdef" />
      <None Include="Assets\src\Taylor\init.txt" />
      <None Include="Assets\src\Max\init.txt" />

@@ -12,6 +12,7 @@ TagManager:
   - worm
   - moleTest
   - ShowOnPause
+  - explosion8
   layers:
   - Default
   - TransparentFX
@@ -22,9 +23,9 @@ TagManager:
   - 
   - 
   - Enemy
-  - BulletLayer
-  - 
-  - 
+  - EnemyBullet
+  - PlayerBullet
+  - Player
   - 
   - 
   - 

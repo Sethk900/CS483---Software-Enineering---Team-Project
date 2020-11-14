@@ -6,6 +6,11 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 
+
+		THIS CODE IS DEPRECATED. Rather than implementing the stress test as a playmode test as it is in this
+		script, it is now implemented as its own scene. The logic implemented in that scene is contained within
+		the BreakUI script. 
+
 namespace Tests
 {
     public class Seth_StressTest

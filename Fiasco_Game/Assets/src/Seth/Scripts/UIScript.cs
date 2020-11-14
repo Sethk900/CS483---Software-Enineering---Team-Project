@@ -11,7 +11,7 @@ public class UIScript : MonoBehaviour
     Text HUD;
 	GameObject[] pauseObjects;
 
-	// Implement the class as a Singleton
+	// Implement the class as a Singleton. There will only be one UI. 
 	private UIScript() { }
 	public static UIScript Instance {
 	get {
@@ -35,7 +35,7 @@ public class UIScript : MonoBehaviour
 		//Initialize the objects that will be hidden until the game is paused (i.e., the objects that make up the pause menu)
 		Time.timeScale = 1;
 		pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
-		hidePaused();
+		hidePaused(); //At the beginning of the scene, hide all of the objects on the pause menu
     }
 
     // Update is called once per frame
@@ -44,7 +44,7 @@ public class UIScript : MonoBehaviour
 		// Constantly update the HUD
         HUD.text = "Score: " + score + " Health: " + health;
 
-		// Check if the player paused the game
+		// Check if the player paused the game: if they have, show all the objects associated with the pause sreen, and set timescale to 0. 
 		if(Input.GetKeyDown(KeyCode.P)){
 		if(Time.timeScale == 1)
 			{
@@ -57,12 +57,13 @@ public class UIScript : MonoBehaviour
 			}
 		}
 
-		// Later we will implement logic here to load the death screen
+		// Later we will implement logic here to load the death screen  <---- Actually, this is deprecated: the deathscreen is loaded via playerDeath in the playerControl script
 		if(health==0){
 			HUD.text = "You died :(";
 		}
     }
-	
+
+	// This function iterates through the list of game objects tagged as "showOnPause" and hides them (i.e. sets active to false)	
 	void hidePaused()
  {
      foreach (GameObject p in pauseObjects)
@@ -71,6 +72,7 @@ public class UIScript : MonoBehaviour
      }
  }
  
+	// This function does the opposite of hidePaused(): it iterates through the array of pause menu objects and shows them on screen (i.e. sets active to true)
  	void showPaused()
  {
      foreach (GameObject p in pauseObjects)

@@ -15,8 +15,7 @@ GameObject:
   - component: {fileID: -6451317358276601083}
   - component: {fileID: 2037320720779532699}
   - component: {fileID: 400584380984847317}
-  - component: {fileID: 8250071265563106937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,15 +179,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.75
---- !u!114 &8250071265563106937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278376461894690991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 832ea19aef6a0e04399256d271259bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

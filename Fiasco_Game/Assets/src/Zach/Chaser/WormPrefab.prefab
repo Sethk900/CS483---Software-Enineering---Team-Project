@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 7320503230617325888}
   - component: {fileID: 2556269200256693758}
   - component: {fileID: 4869870361002266664}
-  m_Layer: 0
-  m_Name: worm
+  m_Layer: 8
+  m_Name: WormPrefab
   m_TagString: worm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,6 +137,7 @@ MonoBehaviour:
   health: 10
   rb: {fileID: 2556269200256693758}
   thePlayer: {fileID: 0}
+  timer: -1
 --- !u!50 &2556269200256693758
 Rigidbody2D:
   serializedVersion: 4

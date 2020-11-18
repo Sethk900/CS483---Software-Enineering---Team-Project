@@ -32,7 +32,7 @@ public class HelpButton : ButtonsConsolidated{
 public class BackButton : ButtonsConsolidated{
 	public  void PressButton(){
 		Debug.Log("pressed back button");
-       //FindObjectOfType<AudioManager>().Play("Cancel"); // - Greyson
+        FindObjectOfType<AudioManager>().Play("CancelSound"); // - Greyson
         SceneManager.LoadScene("StartScreen");
 	}
 	

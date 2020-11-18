@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1665067262417569949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8107264243173021977}
+  - component: {fileID: 5283740252550244500}
+  m_Layer: 0
+  m_Name: SFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8107264243173021977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665067262417569949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5283740252550244500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665067262417569949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbc35caf67e3dc4ba11c6ee23ebd15a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
+  sounds:
+  - name: PlayerShoot
+    clip: {fileID: 8300000, guid: 305356d7425864241b1d39c746bc4877, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
+    source: {fileID: 0}
+  - name: TitleMusic
+    clip: {fileID: 8300000, guid: 3567dea611683b944ba4c658f029a815, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
+    source: {fileID: 0}
+  - name: PlayerShoot
+    clip: {fileID: 8300000, guid: 305356d7425864241b1d39c746bc4877, type: 3}
+    volume: 0.8
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
+    source: {fileID: 0}
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: 7e11947f548013e4d8bd6528f1352e87, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
+    source: {fileID: 0}
+  - name: CancelSound
+    clip: {fileID: 8300000, guid: 0dcff71459e0cbf468d1655ba169900d, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
+    source: {fileID: 0}
+  - name: Success
+    clip: {fileID: 8300000, guid: b50fe001fb9d87748bd9f9bf39c6fc11, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5022708505700182002, guid: 94260d1c578b83b4382ac8830343c3f9, type: 2}
+    source: {fileID: 0}

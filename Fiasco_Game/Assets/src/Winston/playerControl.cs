@@ -24,6 +24,8 @@ public class playerControl : MonoBehaviour
     Vector2 mousePos;
     Quaternion _facing;
 
+    Touch myTouch;
+
     bool playerContactWithEnemy;
 
     void Start()
@@ -38,7 +40,15 @@ public class playerControl : MonoBehaviour
     {
         movementDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        if (SystemInfo.deviceType == DeviceType.Handheld) {
+            if (Input.touchCount > 0) {
+                myTouch = Input.touches[0];
+                mousePos = mainCam.ScreenToWorldPoint(myTouch.position);
+            }
+        }
+        else { //Desktop
+            mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        }
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -54,9 +64,14 @@ public class playerControl : MonoBehaviour
 	 */
     void FixedUpdate()
     {
-        // Position is updated here, using Time.fixedDeltaTime keeps movement consistent
-        rb.MovePosition(rb.position + movementDir * moveSpeed * Time.fixedDeltaTime);
-
+        if (SystemInfo.deviceType == DeviceType.Handheld) {
+            movementDir = new Vector2(Input.acceleration.x, Input.acceleration.y) * moveSpeed * 3;
+            rb.MovePosition(rb.position + movementDir * Time.fixedDeltaTime);
+        }
+        else { //Desktop
+            // Position is updated here, using Time.fixedDeltaTime keeps movement consistent
+            rb.MovePosition(rb.position + movementDir * moveSpeed * Time.fixedDeltaTime);
+        }
         // Shooting angle is updated here
         lookDir = mousePos - rb.position;
         Aim();
@@ -108,7 +123,8 @@ public class playerControl : MonoBehaviour
     // Function called on player death
     void PlayerDeath()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        FindObjectOfType<AudioManager>().Play("PlayerDeath"); // - Greyson
         SceneManager.LoadScene("DeathScreen");
     }
 }

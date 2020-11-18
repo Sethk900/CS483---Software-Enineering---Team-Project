@@ -36,6 +36,8 @@ public class LevelLoader : MonoBehaviour
 	
 	//Coroutine for loading scene with animation
 	IEnumerator LoadLevelCoroutine(int Build_Idx) {
+		//Play success jingle
+		FindObjectOfType<AudioManager>().Play("Success"); // - Greyson
 		//Play Animation
 		transition.SetTrigger("Start");
 	

@@ -49,7 +49,7 @@
      <Compile Include="Assets\src\Zach\Boss\BossLeftFistBehavior.cs" />
      <Compile Include="Assets\src\Seth\Scripts\OptionsButton.cs" />
      <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csLightControl.cs" />
-     <Compile Include="Assets\src\Greyson\SoundAssets.cs" />
+     <Compile Include="Assets\src\Greyson\Unused\SoundAssets.cs" />
      <Compile Include="Assets\src\Max\BulletManage\Scripts\attempt 2\Fire.cs" />
      <Compile Include="Assets\src\Winston\playerControl.cs" />
      <Compile Include="Assets\src\Greyson\genericAudioManager.cs" />

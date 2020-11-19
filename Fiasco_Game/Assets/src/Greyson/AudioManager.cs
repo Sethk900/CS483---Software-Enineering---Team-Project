@@ -3,19 +3,22 @@ using System;
 using UnityEngine;
 
 //Call with FindObjectOfType<AudioManager>().Play("Name");
-public class AudioManager : GenericAudioManager //persistent version of genericAudioManager
+//Singleton, persistent subclass of GenericAudioManager - not destroyed when changing scenes
+public class AudioManager : GenericAudioManager 
 {
 
-	protected override void Awake()
+	protected override void Awake() //This is called instead of genericAudioManager Awake
+	//not quite dynamic binding because Unity is weird about it, but it works
 	{
-		base.Awake();
+		base.Awake(); //calls genericAudioManager Awake anyways
 		Debug.Log("AudioManager awake!");
 
+		//Enforces singleton-ness
 		if (instance != null)
 		{
 			Destroy(gameObject);
 		}
-		else
+		else //Stops destruction of AudioManager between scenes (lets sounds play between loads)
 		{
 			instance = this;
 			DontDestroyOnLoad(gameObject);

@@ -1,6 +1,7 @@
 ﻿using UnityEngine.Audio;
 using UnityEngine;
 
+//Defines Unity-Serializable parameters for Sound objects, for use with GenericAudioManager
 [System.Serializable]
 public class Sound {
 

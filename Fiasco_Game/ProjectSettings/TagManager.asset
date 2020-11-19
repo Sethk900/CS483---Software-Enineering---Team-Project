@@ -13,6 +13,7 @@ TagManager:
   - moleTest
   - ShowOnPause
   - explosion8
+  - coconut
   layers:
   - Default
   - TransparentFX

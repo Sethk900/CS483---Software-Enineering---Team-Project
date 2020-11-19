@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/MaxTestLevel1.unity
+- path: Assets/src/Max/Scripts/BulletManage/Working Stuff/Scenes/MaxTestLevel1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

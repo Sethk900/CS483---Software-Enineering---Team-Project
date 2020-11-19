@@ -5,6 +5,16 @@ using UnityEngine.Video;
 
 public class DemoPlayer : MonoBehaviour
 {
+    #region Singleton
+
+    public static DemoPlayer Instance;
+
+    DemoPlayer(){
+        Instance = this;
+    }
+
+    #endregion
+
     public VideoClip[] VideoClipArray;
     private VideoPlayer videoPlayer;
     private float timeToNextVideo;

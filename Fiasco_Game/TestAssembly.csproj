@@ -44,9 +44,11 @@
      <Compile Include="Assets\src\Greyson\SetVolume.cs" />
      <Compile Include="Assets\src\Max\Scripts\BulletManage\Working Stuff\enemyBulletSpawner.cs" />
      <Compile Include="Assets\src\Seth\Scripts\DifficultyImplementation.cs" />
+     <Compile Include="Assets\src\Max\Scripts\BulletManage\Working Stuff\playerBullet.cs" />
      <Compile Include="Assets\src\Seth\Scripts\UIScript.cs" />
      <Compile Include="Assets\src\Zach\Boss\BossLeftFistBehavior.cs" />
      <Compile Include="Assets\src\Seth\Scripts\OptionsButton.cs" />
+     <Compile Include="Assets\src\Max\Scripts\BulletManage\Working Stuff\explosion8.cs" />
      <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csLightControl.cs" />
      <Compile Include="Assets\src\Greyson\SoundAssets.cs" />
      <Compile Include="Assets\src\Winston\playerControl.cs" />
@@ -72,14 +74,12 @@
      <Compile Include="Assets\src\Max\Scripts\DemoMode\DemoPlayer.cs" />
      <Compile Include="Assets\src\Taylor\LevelLoader.cs" />
      <Compile Include="Assets\src\Greyson\EnemyMovement.cs" />
+     <Compile Include="Assets\src\Max\Scripts\BulletManage\Working Stuff\playerBulletSpawner.cs" />
      <Compile Include="Assets\src\Max\Scripts\BulletManage\Working Stuff\enemyBullet.cs" />
      <Compile Include="Assets\src\Zach\Sprayer\BeetleControl.cs" />
      <Compile Include="Assets\src\Max\Prefabs\Fx Explosion Pack\Script\csMouseOrbit.cs" />
      <Compile Include="Assets\src\Taylor\interactableLevelObject.cs" />
      <Compile Include="Assets\src\Seth\Scripts\StartButton.cs" />
-     <Compile Include="Assets\src\Max\Scripts\BulletManage\Working Stuff\explosion8.cs" />
-     <Compile Include="Assets\src\Max\Scripts\BulletManage\Working Stuff\playerBullet.cs" />
-     <Compile Include="Assets\src\Max\Scripts\BulletManage\Working Stuff\playerBulletSpawner.cs" />
      <None Include="Assets\src\TestAssembly.asmdef" />
      <None Include="Assets\src\Taylor\init.txt" />
      <None Include="Assets\src\Max\init.txt" />

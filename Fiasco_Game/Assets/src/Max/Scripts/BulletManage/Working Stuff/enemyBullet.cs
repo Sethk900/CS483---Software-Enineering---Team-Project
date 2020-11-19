@@ -10,7 +10,7 @@ public class enemyBullet : MonoBehaviour, IpooledObject
     objectPooler objectPooler;
 
     public float bulletSpeed = 2.5f; 
-    private float despawnTimer = 3f;
+    public float despawnTimer = 3f;
 
     public void OnObjectSpawn(){
         

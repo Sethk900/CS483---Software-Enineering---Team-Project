@@ -109,10 +109,10 @@
      <None Include="Assets\src\Zach\init.txt" />
      <None Include="Assets\src\Winston\init.txt" />
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/cougf/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Seth King/Documents/GitHub/CS383_Team_Project_v2/Fiasco_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/cougf/Documents/GitHub/CS383_Team_Project/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Seth King/Documents/GitHub/CS383_Team_Project_v2/Fiasco_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -17,9 +17,11 @@ public class sign : interactableLevelObject
 	
 	public override void Activate(){
 		dialogBox.SetActive(true);
+		Time.timeScale = 0;
 	}
 	
 	public override void DeActivate(){
 		dialogBox.SetActive(false);
+		Time.timeScale = 1;
 	}
 }

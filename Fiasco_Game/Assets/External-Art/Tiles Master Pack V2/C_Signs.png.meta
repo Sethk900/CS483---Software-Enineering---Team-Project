@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: -1872834859215622000
     second: C_Signs_0
+  - first:
+      213: -1910857860309587731
+    second: C_Signs_1
+  - first:
+      213: -5476912360802854872
+    second: C_Signs_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,7 +106,7 @@ TextureImporter:
         width: 28
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -108,6 +114,48 @@ TextureImporter:
       bones: []
       spriteID: 090fb754e9a5206e0800000000000000
       internalID: -1872834859215622000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Signs_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 327
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8ebf376e44b75e0800000000000000
+      internalID: -1910857860309587731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Signs_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 391
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828566cc9391ef3b0800000000000000
+      internalID: -5476912360802854872
       vertices: []
       indices: 
       edges: []

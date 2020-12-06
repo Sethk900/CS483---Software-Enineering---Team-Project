@@ -135,9 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4185402271315977196}
   health: 10
-  bulletSpeed: 10
-  bulletFrequency: 300
-  bulletTimer: 0
   rb: {fileID: 2037320720779532699}
   thePlayer: {fileID: 0}
   bulletPrefab: {fileID: 2523264847705416588, guid: a704d711841554c438b85dcb40bf8a67, type: 3}
